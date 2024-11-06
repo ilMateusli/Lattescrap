@@ -49,8 +49,6 @@ qualis_data = pd.read_excel(latest_file)[['ISSN', 'Título', 'Estrato']]
 
 os.environ["webdriver.chrome.driver"] = "chromedriver.exe"
 
-
-##################################### Alguns problema: Limite de busca no lattes, servidor que é aberto e não fecha ao finalizar o programa, não tem barra de carregamento. #######################################
 #instructions = True
 
 def alternar(Instructions):
@@ -597,5 +595,5 @@ def main():
 
 
   
-if __name__ == "__main__":
-    main()
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000)
